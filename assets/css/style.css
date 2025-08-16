@@ -17,7 +17,34 @@ body {
   font-weight: 500;
   font-size: 14px;
 }
-/* .top-bar-social{
-  color: #fff;
-  margin-left: 10px;
-} */
+/* Header styling */
+ .header{
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+ .header .navbar-brand.logo{
+  font-size: 24px;
+  font-weight: 500;
+ }
+ 
+.navbar-nav.halim-menu li a{
+  color: #333;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 5px;
+}
+.navbar-nav.halim-menu li a:hover{
+  color: #635cdb;
+  transition: 3s;
+}
+.navbar-nav.halim-menu li ul{
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+.navbar-nav.halim-menu li ul li a{
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 5px;
+}

@@ -6,3 +6,18 @@ body {
   line-height: 24px;
   color: #333;
 }
+.top-bar-area{
+  background-color: #635cdb;
+  padding: 10px 0;
+}
+.top-bar-area a{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+/* .top-bar-social{
+  color: #fff;
+  margin-left: 10px;
+} */

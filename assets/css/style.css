@@ -34,20 +34,20 @@ body {
   font-size: 17px;
   font-weight: 500;
   margin: 0 5px;
+  transition: 3s;
 }
 .navbar-nav.halim-menu li a:hover {
   color: #635cdb;
-  transition: 3s;
 }
 .navbar-nav.halim-menu li ul {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2);
   border: 1px solid #f4f4f4;
   background-color: #fff;
+  padding: 6px;
 }
 .navbar-nav.halim-menu li ul li a {
   font-size: 16px;
   font-weight: 400;
-  padding: 0 5px;
 }
 /* Sider Area  styling */
 .single-slide {
@@ -110,4 +110,20 @@ body {
 .slide-content .box-btn:hover {
   background-color: #494679;
   transform: scale(1.05);
+}
+.sider-area .owl-dots {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sider-area .owl-dots button {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  display: block;
+  margin: 15px 0;
+}
+.sider-area .owl-dots button.active {
+  background-color: #635cdb;
 }

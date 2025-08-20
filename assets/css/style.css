@@ -6,11 +6,11 @@ body {
   line-height: 24px;
   color: #333;
 }
-.top-bar-area{
+.top-bar-area {
   background-color: #635cdb;
   padding: 10px 0;
 }
-.top-bar-area a{
+.top-bar-area a {
   color: #fff;
   text-decoration: none;
   margin-right: 20px;
@@ -18,34 +18,96 @@ body {
   font-size: 14px;
 }
 /* Header styling */
- .header{
+.header {
   background-color: #fff;
   padding: 20px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
- }
- .header .navbar-brand.logo{
+}
+.header .navbar-brand.logo {
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 700;
- }
- 
-.navbar-nav.halim-menu li a{
+}
+
+.navbar-nav.halim-menu li a {
   color: #333;
   font-size: 17px;
   font-weight: 500;
   margin: 0 5px;
 }
-.navbar-nav.halim-menu li a:hover{
+.navbar-nav.halim-menu li a:hover {
   color: #635cdb;
   transition: 3s;
 }
-.navbar-nav.halim-menu li ul{
+.navbar-nav.halim-menu li ul {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2);
   border: 1px solid #f4f4f4;
   background-color: #fff;
 }
-.navbar-nav.halim-menu li ul li a{
+.navbar-nav.halim-menu li ul li a {
   font-size: 16px;
   font-weight: 400;
   padding: 0 5px;
+}
+/* Sider Area  styling */
+.single-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.single-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.slide-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.slide-content h4::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #635cdb;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+}
+.slide-content h4 {
+  text-transform: capitalize;
+  position: relative;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+.slide-content h1 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 50px;
+}
+.slide-content .box-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #635cdb;
+  font-weight: 600;
+  padding: 10px 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.slide-content .box-btn:hover {
+  background-color: #494679;
+  transform: scale(1.05);
 }

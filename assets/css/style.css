@@ -6,6 +6,12 @@ body {
   line-height: 24px;
   color: #333;
 }
+.pt-100 {
+  padding-top: 100px;
+}
+.pb-100 {
+  padding-bottom: 100px;
+}
 .top-bar-area {
   background-color: #635cdb;
   padding: 10px 0;
@@ -97,7 +103,8 @@ body {
   font-weight: 700;
   font-size: 50px;
 }
-.slide-content .box-btn {
+/* .slide-content .box-btn { */
+.box-btn {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -107,10 +114,11 @@ body {
   padding: 10px 30px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.slide-content .box-btn:hover {
+.box-btn:hover {
   background-color: #494679;
   transform: scale(1.05);
 }
+/* all buttons styling (ends) */
 .sider-area .owl-dots {
   position: absolute;
   right: 20px;
@@ -126,4 +134,74 @@ body {
 }
 .sider-area .owl-dots button.active {
   background-color: #635cdb;
+}
+/* About styling */
+.section-title {
+  position: relative;
+  margin-bottom: 80px;
+}
+.section-title::before {
+  position: absolute;
+  content: "";
+  /* width: 80px;
+  height: 2px; */
+  width: 2px;
+  height: 90px;
+  background-color: #635cdb;
+  left: 50%;
+  transform: translateX(-50%);
+  /* transform: translateX(-50%) rotate(90deg); */
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #635cdb;
+  left: 50%;
+  bottom: -14px;
+  transform: translateX(-50%);
+}
+.section-title h4 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-weight: 30px;
+}
+.section-title h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.page-title {
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 7px;
+  margin-bottom: 15px;
+}
+.page-title::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #635cdb;
+  bottom: 0;
+}
+
+.about-icon i {
+  border: 1px solid #635cdb;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #635cdb;
+  transition: .3s;
+}
+.single-about:hover .about-icon i {
+  background-color: #635cdb;
+  color: #fff;
 }

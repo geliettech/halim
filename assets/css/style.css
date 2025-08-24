@@ -74,8 +74,6 @@ body {
   background-color: #333;
   opacity: 0.8;
   z-index: 1;
-  left: 0;
-  top: 0;
 }
 .slide-content {
   position: relative;
@@ -103,7 +101,7 @@ body {
   font-weight: 700;
   font-size: 50px;
 }
-/* .slide-content .box-btn { */
+/* all buttons styling (start) */
 .box-btn {
   display: inline-block;
   text-decoration: none;
@@ -174,6 +172,7 @@ body {
   font-weight: 400;
   margin-bottom: 6px;
 }
+
 .page-title {
   position: relative;
   text-transform: capitalize;
@@ -182,6 +181,7 @@ body {
   padding-bottom: 7px;
   margin-bottom: 15px;
 }
+/* underline on all class name with page-title styling (start) */
 .page-title::before {
   content: "";
   position: absolute;
@@ -190,7 +190,7 @@ body {
   background-color: #635cdb;
   bottom: 0;
 }
-
+/* underline on all class name with page-title styling (end) */
 .about-icon i {
   border: 1px solid #635cdb;
   width: 40px;
@@ -199,9 +199,57 @@ body {
   line-height: 40px;
   border-radius: 50%;
   color: #635cdb;
-  transition: .3s;
+  transition: 0.3s;
 }
 .single-about:hover .about-icon i {
   background-color: #635cdb;
   color: #fff;
+}
+/* Features Area  styling */
+.features-area {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.features-area::before {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: 1;
+  inset: 0; /* left: 0; top: 0; */
+}
+.features-area > .container {
+  position: relative;
+  z-index: 2;
+}
+.features-area .page-title {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.features-area .accordion-button {
+  background-color: #635cdb;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.features-area .accordion-item {
+  border: 0;
+}
+.features-area .single-progress h5 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+.features-area .progress {
+  height: 20px;
+  border-radius: 0;
+  background-color: #fff;
+}
+.features-area .progress-bar {
+  background-color: #635cdb;
+  height: 20px;
 }

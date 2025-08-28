@@ -134,6 +134,7 @@ body {
   background-color: #635cdb;
 }
 /* About styling */
+/* about and services section title stying begin */
 .section-title {
   position: relative;
   margin-bottom: 80px;
@@ -172,7 +173,7 @@ body {
   font-weight: 400;
   margin-bottom: 6px;
 }
-
+/* about and services section title stying end */
 .page-title {
   position: relative;
   text-transform: capitalize;
@@ -252,4 +253,33 @@ body {
 .features-area .progress-bar {
   background-color: #635cdb;
   height: 20px;
+}
+/* Services styling */
+.single-service{
+  box-shadow: 0px 10px 30px 0px rgba(205, 205, 205, 0.33);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: .3s;
+  border-bottom: 3px solid #fff;
+}
+.single-service:hover{
+   border-bottom: 3px solid #635cdb;
+}
+.single-service:hover i{
+  border-radius: 5%;
+}
+.single-service i{
+  background-color: #635cdb;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 50%;
+  transition: .3s;
+}
+.single-service h4{
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 25px 0 15px
 }

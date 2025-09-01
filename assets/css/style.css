@@ -173,7 +173,7 @@ body {
   font-weight: 400;
   margin-bottom: 6px;
 }
-/* about and services section title stying end */
+/* about, services, and Team section title stying end */
 .page-title {
   position: relative;
   text-transform: capitalize;
@@ -255,20 +255,20 @@ body {
   height: 20px;
 }
 /* Services styling */
-.single-service{
+.single-service {
   box-shadow: 0px 10px 30px 0px rgba(205, 205, 205, 0.33);
   padding: 30px;
   margin-bottom: 30px;
-  transition: .3s;
+  transition: 0.3s;
   border-bottom: 3px solid #fff;
 }
-.single-service:hover{
-   border-bottom: 3px solid #635cdb;
+.single-service:hover {
+  border-bottom: 3px solid #635cdb;
 }
-.single-service:hover i{
+.single-service:hover i {
   border-radius: 5%;
 }
-.single-service i{
+.single-service i {
   background-color: #635cdb;
   width: 60px;
   height: 60px;
@@ -276,23 +276,23 @@ body {
   color: #fff;
   font-size: 22px;
   border-radius: 50%;
-  transition: .3s;
+  transition: 0.3s;
 }
-.single-service h4{
+.single-service h4 {
   text-transform: capitalize;
   font-weight: 700;
-  margin: 25px 0 15px
+  margin: 25px 0 15px;
 }
 /* counter styling */
-.single-counter{
+.single-counter {
   background-color: #292e47;
   color: #fff;
   padding: 60px 40px;
 }
-.counter-area .col-xl-3:nth-child(even) .single-counter{
+.counter-area .col-xl-3:nth-child(even) .single-counter {
   background-color: #24283f;
 }
-.single-counter i{
+.single-counter i {
   background-color: #635cdb;
   width: 40px;
   height: 40px;
@@ -304,9 +304,74 @@ body {
   text-transform: capitalize;
   font-size: 18px;
 }
-.single-counter h4 span{
+.single-counter h4 span {
   display: block;
   font-size: 30px;
   font-size: bold;
   margin-bottom: 5px;
+}
+/* Team Area styling */
+.single-team {
+  position: relative;
+  overflow: hidden;
+}
+.single-team:hover .team-overlay {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) rotate(360deg);
+}
+.team-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  transform: scale(0) rotate(0);
+}
+.team-overlay::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: -1;
+}
+.team-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.team-content h4 {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+  /* margin-bottom: 5px; */
+}
+.team-content h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.team-content .team-social {
+  margin-top: 15px;
+}
+.team-content .team-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+.team-content .team-social a:hover {
+  color: #635cdb;
 }

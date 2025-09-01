@@ -283,3 +283,30 @@ body {
   font-weight: 700;
   margin: 25px 0 15px
 }
+/* counter styling */
+.single-counter{
+  background-color: #292e47;
+  color: #fff;
+  padding: 60px 40px;
+}
+.counter-area .col-xl-3:nth-child(even) .single-counter{
+  background-color: #24283f;
+}
+.single-counter i{
+  background-color: #635cdb;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+.single-counter h4 {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.single-counter h4 span{
+  display: block;
+  font-size: 30px;
+  font-size: bold;
+  margin-bottom: 5px;
+}

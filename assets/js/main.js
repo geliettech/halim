@@ -10,4 +10,12 @@ $(document).ready(function () {
     delay: 10,
     time: 1000,
   });
+  $(".testimonials").owlCarousel({
+    items: 3,
+    loop: true,
+    autoplay: true,
+    nav: false,
+    margin: 30,
+    center: true,
+  });
 });

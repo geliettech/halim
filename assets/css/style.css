@@ -502,3 +502,55 @@ body {
   text-transform: capitalize;
   font-size: 16px;
  }
+ /* footer styling */
+ .footer-area{
+  padding: 50px 0;
+  background-color: #333;
+  color: #fff;
+ }
+ .footer-logo{
+  margin-top: 45px;
+ }
+ .footer-logo h4{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 45px;
+ }
+ .single-footer ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+ }
+
+ .single-footer ul li{
+  padding-bottom: 10px;
+  font-weight: 400;
+ }
+  .single-footer ul li:last-child{
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .single-footer ul li a{
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .3s;
+  }
+   .single-footer ul li a:hover{
+    color: #635cdb;
+   }
+   .row.copy{
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 30px;
+   }
+   .copy a{
+    color: #fff;
+    margin-left: 10px;
+    transition: .3s;
+    text-decoration: none;
+   }
+   .copy a:hover{
+    color: #635cdb;
+   }

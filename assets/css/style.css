@@ -579,3 +579,72 @@ body {
   color: #fff;
   text-decoration: none;
 }
+/* styling for portfolio page */
+.portfolio-menu{
+  list-style: none;
+  margin-bottom: 50px;
+}
+.portfolio-menu li{
+  border: 1px solid #635cdb;
+  padding: 5px 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.single-portfolio {
+  position: relative;
+}
+.single-portfolio img{
+  width: 100%;
+}
+.portfolio-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+.portfolio-overlay:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: -1;
+}
+.portfolio-overlay i{
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+.portfolio-overlay h4{
+  text-transform: capitalize;
+  margin-top: 15px;
+  font-size: 24px;
+}
+.portfolio-overlay h4 span{
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  text-transform: lowercase;
+  margin-top: 5px;
+}
+.single-portfolio:hover .portfolio-overlay {
+  opacity: 1;
+  visibility: visible;
+}

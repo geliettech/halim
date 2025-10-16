@@ -18,4 +18,17 @@ $(document).ready(function () {
     margin: 30,
     center: true,
   });
+  // init Isotope
+  var $grid = $(".portfolio-items").isotope({
+    // options
+  });
+  // filter items on button click
+  $(".portfolio-menu").on("click", "li", function () {
+    var filterValue = $(this).attr("data-filter");
+    $grid.isotope({ filter: filterValue });
+  });
+  $(".portfolio-menu").on("click", "li", function () {
+    $(this).siblings(".active").removeClass("active");
+    $(this).addClass("active");
+  });
 });

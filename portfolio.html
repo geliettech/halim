@@ -80,13 +80,13 @@
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="./about.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link" href="./services.html">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -144,16 +144,16 @@
         <div class="row">
           <div class="col-xl-12">
             <ul class="portfolio-menu d-flex justify-content-center">
-              <li>all</li>
-              <li>business</li>
-              <li>finance</li>
-              <li>marketing</li>
-              <li>idea</li>
+              <li data-filter="*">all</li>
+              <li data-filter=".business">business</li>
+              <li data-filter=".finance">finance</li>
+              <li data-filter=".marketing">marketing</li>
+              <li data-filter=".idea">idea</li>
             </ul>
           </div>
         </div>
-        <div class="row g-0">
-          <div class="col-xl-4">
+        <div class="row g-0 portfolio-items">
+          <div class="col-xl-4 idea finance">
             <div class="single-portfolio">
               <img src="./assets/img/portfolio/01.jpg" alt="">
               <div class="portfolio-overlay">
@@ -162,7 +162,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4">
+          <div class="col-xl-4 business">
             <div class="single-portfolio">
               <img src="./assets/img/portfolio/02.jpg" alt="">
               <div class="portfolio-overlay">
@@ -171,7 +171,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4">
+          <div class="col-xl-4 marketing finance">
             <div class="single-portfolio">
               <img src="./assets/img/portfolio/03.jpg" alt="">
               <div class="portfolio-overlay">
@@ -180,7 +180,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4">
+          <div class="col-xl-4 idea business finance">
             <div class="single-portfolio">
               <img src="./assets/img/portfolio/04.jpg" alt="">
               <div class="portfolio-overlay">
@@ -189,7 +189,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4">
+          <div class="col-xl-4 business idea">
             <div class="single-portfolio">
               <img src="./assets/img/portfolio/05.jpg" alt="">
               <div class="portfolio-overlay">
@@ -198,7 +198,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4">
+          <div class="col-xl-4 idea business marketing">
             <div class="single-portfolio">
               <img src="./assets/img/portfolio/06.jpg" alt="">
               <div class="portfolio-overlay">
@@ -361,9 +361,10 @@
     <script src="./assets/js/owl-carousel.min.js"></script>
     <!-- Waypoint -->
     <script src="./assets/js/waypoint.min.js"></script>
-
     <!-- Counterup JS -->
     <script src="./assets/js/counterup.min.js"></script>
+    <!-- Isotope JS -->
+     <script src="./assets/js/isotope.min.js"></script>
     <!-- main JS -->
     <script src="./assets/js/main.js"></script>
   </body>

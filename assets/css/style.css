@@ -592,6 +592,10 @@ body {
   margin: 0 10px;
   cursor: pointer;
 }
+.portfolio-menu li.active{
+  background-color: #635cdb;
+  color: #fff;
+}
 .single-portfolio {
   position: relative;
 }

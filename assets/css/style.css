@@ -426,7 +426,7 @@ body {
 .testimonials .owl-item.center .single-testimonial {
   background-color: #635cdb;
 }
-/* blog styling */
+/* blog section and page styling */
 .single-blog {
   border: 1px solid #ddd;
 }
@@ -651,4 +651,8 @@ body {
 .single-portfolio:hover .portfolio-overlay {
   opacity: 1;
   visibility: visible;
+}
+/* styling for blog page */
+.blog-page .single-blog {
+  margin-bottom: 30px;
 }

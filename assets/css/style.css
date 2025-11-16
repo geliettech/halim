@@ -656,3 +656,46 @@ body {
 .blog-page .single-blog {
   margin-bottom: 30px;
 }
+/* styling for single blog page */
+.single-blog-page h4{
+  text-transform: capitalize;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.single-blog-page img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.single-blog-related{
+  margin: 30px 0;
+}
+.sidebar{
+  margin-bottom: 30px;
+}
+.sidebar ul{
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li{
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+.sidebar ul li a{
+  text-decoration: none;
+  color: #333;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: .3s;
+}
+.sidebar ul li a:hover{
+  color: #635cdb;
+}
+.sidebar ul li:last-child{
+  border-bottom: 0;
+}
+.sidebar ul li span{
+  display: block;
+  font-style: italic;
+  margin-top: 5px;
+}
